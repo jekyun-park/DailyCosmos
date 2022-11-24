@@ -9,10 +9,8 @@ import Foundation
 
 final class NetworkManager {
 
-    static let key = "mX5Y263X77wAdtmggcDdgl68oAOI10idRVpTr97C"
-
     static var defaultRequestURL: String {
-        "https://api.nasa.gov/planetary/apod?api_key=\(key)&date="
+        "https://api.nasa.gov/planetary/apod?api_key=\(Bundle.main.NASA_API_KEY)&date="
     }
 
     static func fetchDataWithURLString <T:Decodable> (urlString: String) async throws -> T {
