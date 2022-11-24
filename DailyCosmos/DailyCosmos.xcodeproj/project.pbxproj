@@ -16,6 +16,7 @@
 		220793D5292F35C30060DC5D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220793D4292F35C30060DC5D /* DetailView.swift */; };
 		220793D7292F3CF80060DC5D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220793D6292F3CF80060DC5D /* Observer.swift */; };
 		220793D9292F5FED0060DC5D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220793D8292F5FED0060DC5D /* Message.swift */; };
+		2288A63A292FCACC00DFC436 /* APIsInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2288A639292FCACC00DFC436 /* APIsInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		220793D4292F35C30060DC5D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		220793D6292F3CF80060DC5D /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		220793D8292F5FED0060DC5D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2288A639292FCACC00DFC436 /* APIsInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIsInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 		220793B4292F26C00060DC5D = {
 			isa = PBXGroup;
 			children = (
+				2288A639292FCACC00DFC436 /* APIsInfo.plist */,
 				220793BF292F26C10060DC5D /* DailyCosmos */,
 				220793BE292F26C10060DC5D /* Products */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2288A63A292FCACC00DFC436 /* APIsInfo.plist in Resources */,
 				220793C8292F26C20060DC5D /* Preview Assets.xcassets in Resources */,
 				220793C5292F26C20060DC5D /* Assets.xcassets in Resources */,
 			);
