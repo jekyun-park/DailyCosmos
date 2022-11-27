@@ -8,13 +8,14 @@
 import Foundation
 
 final class NetworkManager {
-
-    static var defaultRequestURL: String {
+    
+    static let shared: NetworkManager = NetworkManager()
+    
+    var defaultRequestURL: String {
         "https://api.nasa.gov/planetary/apod?api_key=\(Bundle.main.NASA_API_KEY)&date="
     }
 
-    static func fetchDataWithURLString <T:Decodable> (urlString: String) async throws -> T {
-
+    func fetchDataWithURLString <T:Decodable> (urlString: String) async throws -> T {
         guard let url = URL(string: urlString) else { fatalError("Unvalid URL") }
 
         let (data, _) = try await URLSession.shared.data(from: url)
@@ -27,7 +28,7 @@ final class NetworkManager {
         }
     }
     
-    static func decodeData <T: Decodable> (_ data: Data) -> T {
+    func decodeData <T: Decodable> (_ data: Data) -> T {
         do  {
             return try JSONDecoder().decode(T.self, from: data)
         } catch (let error) {
@@ -36,7 +37,7 @@ final class NetworkManager {
         }
     }
     
-    static func requestTranslate(_ string:String) async throws -> Data {
+    func requestTranslate(_ string:String) async throws -> Data {
         
         let session = URLSession.shared
         let clientID = "L1d6KAw_asR_S4CQvYBx"

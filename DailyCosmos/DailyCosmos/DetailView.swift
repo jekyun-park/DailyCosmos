@@ -34,8 +34,8 @@ struct DetailView: View {
 
                         Button {
                             Task {
-                                let result = try await NetworkManager.requestTranslate(data.explanation)
-                                let decodedResult: TranslateResponse = NetworkManager.decodeData(result)
+                                let result = try await NetworkManager.shared.requestTranslate(data.explanation)
+                                let decodedResult: TranslateResponse = NetworkManager.shared.decodeData(result)
                                 translatedString =
                                 decodedResult.message.result.translatedText
                             }

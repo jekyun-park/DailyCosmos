@@ -24,8 +24,7 @@ struct ContentView: View {
                 .onChange(of: selectedDate) { newValue in
 
                 if newValue > selectedDate {
-//                    Alert(title: Text("미래의 날짜 지정은 불가합니다."))
-//                    self.disabled(selectedDate)
+
                 } else {
 
                     let dateFormatter = DateFormatter()
@@ -34,7 +33,7 @@ struct ContentView: View {
                     let dateString = dateFormatter.string(from: selectedDate)
 
                     Task {
-                        observer.data = try await NetworkManager.fetchDataWithURLString(urlString: NetworkManager.defaultRequestURL + dateString)
+                        observer.data = try await NetworkManager.shared.fetchDataWithURLString(urlString: NetworkManager.shared.defaultRequestURL + dateString)
                         isPresented = true
                     }
                 }
