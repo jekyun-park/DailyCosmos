@@ -20,5 +20,29 @@ extension Bundle {
         
         return key
     }
+    
+    var CLIENT_ID: String {
+        guard let file = self.path(forResource: "APIsInfo", ofType: "plist") else { return "" }
+        
+        guard let resource = NSDictionary(contentsOfFile: file) else { return "" }
+        
+        guard let key = resource["CLIENT_ID"] as? String else {
+            fatalError("CLIENT_ID not found")
+        }
+        
+        return key
+    }
+    
+    var CLIENT_SECRET: String {
+        guard let file = self.path(forResource: "APIsInfo", ofType: "plist") else { return "" }
+        
+        guard let resource = NSDictionary(contentsOfFile: file) else { return "" }
+        
+        guard let key = resource["CLIENT_SECRET"] as? String else {
+            fatalError("CLIENT_SECRET not found")
+        }
+        
+        return key
+    }
 
 }

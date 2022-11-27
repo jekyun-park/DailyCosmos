@@ -40,8 +40,8 @@ final class NetworkManager {
     func requestTranslate(_ string:String) async throws -> Data {
         
         let session = URLSession.shared
-        let clientID = "L1d6KAw_asR_S4CQvYBx"
-        let clientSecret = "qyu7jlcm9m"
+        let clientID = Bundle.main.CLIENT_ID
+        let clientSecret = Bundle.main.CLIENT_SECRET
         
         let stringWithParameters = "source=en&target=ko&text=\(string)"
         let data = stringWithParameters.data(using: .utf8)!
