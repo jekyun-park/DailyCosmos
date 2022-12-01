@@ -18,9 +18,12 @@ NASA API를 활용하여 하루 한장의 천체 사진과 그 설명을 보여�
 현재 API KEY가 숨겨져 있는 상태입니다. 실행을 원하시는 분은
 
 - [NASA APIs](https://api.nasa.gov/index.html#browseAPI) 에서 API 키 발급
+
 - [Naver Developers](https://developers.naver.com/main/) 에서 Application > 내 애플리케이션에 앱 등록
 
-후에 실행해보실 수 있습니다.
+- 위에서 발급받은 NASA API KEY와 NAVER Developers에서 발급받은 Client ID, Client Secret을 APIsInfo.plist 에서 등록 
+
+이후 실행해보실 수 있습니다.
 
 
 
@@ -29,7 +32,10 @@ NASA API를 활용하여 하루 한장의 천체 사진과 그 설명을 보여�
 - DatePicker에서 날짜를 선택시 해당 날짜에 해당하는 천체 사진과 영문 설명을 제공
 - 번역 버튼 클릭시 파파고 API를 사용하여 한국어로 번역
 
+
+
 ## 스크린샷
+
 <p align="center" width="100%">
 
 <img src="https://user-images.githubusercontent.com/19788294/205105768-6b69e567-d064-484f-ac29-2d577a2fe04d.png" width="30%">
