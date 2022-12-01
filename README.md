@@ -9,7 +9,7 @@ NASA API를 활용하여 하루 한장의 천체 사진과 그 설명을 보여�
 
 휴대폰과 모니터만 보고 있어도 하루가 금새 지나가 버려 그럴 시간이 없습니다.
 
-그래서 `천체 사진을 앱에서 볼 수 있게 만들어 보자!` 라는 생각에서 출발하였습니다.
+그래서 `천체 사진을 앱에서 볼 수 있게 만들어 보자!` 라는 생각에서 개발하게 되었습니다.
 
 
 
@@ -30,7 +30,15 @@ NASA API를 활용하여 하루 한장의 천체 사진과 그 설명을 보여�
 - 번역 버튼 클릭시 파파고 API를 사용하여 한국어로 번역
 
 ## 스크린샷
+<p align="center" width="100%">
 
+<img src="https://user-images.githubusercontent.com/19788294/205105768-6b69e567-d064-484f-ac29-2d577a2fe04d.png" width="30%">
+
+<img src="https://user-images.githubusercontent.com/19788294/205106005-0f913ff6-b119-42f2-bbe3-acd09d8cf6b6.png" width="30%">
+
+<img src ="https://user-images.githubusercontent.com/19788294/205106030-6a9bc4b5-1a22-479e-8852-fed8346f4712.png" width=30%>
+
+</p>
 
 
 ## 사용기술
