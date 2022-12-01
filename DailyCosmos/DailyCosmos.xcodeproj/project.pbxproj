@@ -97,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				220793D6292F3CF80060DC5D /* Observer.swift */,
-				220793D0292F32D30060DC5D /* SpaceData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,18 +113,19 @@
 		22A3AA6C2938E96B00EC2FB4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				22A3AA6D2938E97600EC2FB4 /* Model */,
+				22A3AA6D2938E97600EC2FB4 /* APIModel */,
 				220793CE292F32230060DC5D /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		22A3AA6D2938E97600EC2FB4 /* Model */ = {
+		22A3AA6D2938E97600EC2FB4 /* APIModel */ = {
 			isa = PBXGroup;
 			children = (
+				220793D0292F32D30060DC5D /* SpaceData.swift */,
 				220793D8292F5FED0060DC5D /* Message.swift */,
 			);
-			path = Model;
+			path = APIModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

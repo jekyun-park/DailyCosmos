@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 struct Message: Decodable {
     
     let type: String
