@@ -7,9 +7,7 @@
 
 import Foundation
 
-struct TranslateResponse: Decodable {
-    let message: Message
-}
+
 
 struct Message: Decodable {
     
@@ -29,4 +27,8 @@ struct Message: Decodable {
 
 struct Result:Decodable {
     let translatedText:String
+}
+
+struct TranslateResponse: Decodable {
+    let message: Message
 }
