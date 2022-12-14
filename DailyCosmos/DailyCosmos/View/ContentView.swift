@@ -42,7 +42,7 @@ struct ContentView: View {
 
                 .sheet(isPresented: $isPresented) {
                 if let data = observer.data {
-                    DetailView(data: data)
+                    DetailView(spaceData: data)
                 }
             }
 

@@ -10,9 +10,8 @@ import SwiftUI
 struct DetailView: View {
 
     @Environment(\.dismiss) var dismiss
-    let data: SpaceData
-
     @State private var translatedString: String = ""
+    let spaceData: SpaceData
 
     var body: some View {
         
@@ -20,7 +19,7 @@ struct DetailView: View {
 
             ScrollView {
 
-                AsyncImage(url: URL(string: data.URL)!) { image in
+                AsyncImage(url: URL(string: spaceData.URL)!) { image in
                     image
                         .resizable()
                         .scaledToFit()
@@ -34,7 +33,7 @@ struct DetailView: View {
 
                         Button {
                             Task {
-                                let result = try await NetworkManager.shared.requestTranslate(data.explanation)
+                                let result = try await NetworkManager.shared.requestTranslate(spaceData.explanation)
                                 let decodedResult: TranslateResponse = NetworkManager.shared.decodeData(result)
                                 translatedString =
                                 decodedResult.message.result.translatedText
@@ -49,7 +48,7 @@ struct DetailView: View {
                         Spacer()
                     }
 
-                    Text(data.explanation)
+                    Text(spaceData.explanation)
                         .font(.body)
                         .padding()
 
@@ -62,7 +61,7 @@ struct DetailView: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text(data.title)
+                    Text(spaceData.title)
                         .font(.headline)
                         .padding()
                 }
@@ -84,8 +83,8 @@ struct DetailView: View {
     }
 }
 
-//struct DetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailView(data: .c)
-//    }
-//}
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView(spaceData: SpaceData(date: "", explanation: "", mediaType: "", title: "title", URL: "www.naver.com"))
+    }
+}
