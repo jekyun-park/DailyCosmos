@@ -26,7 +26,7 @@ struct DetailView: View {
                 } placeholder: {
                     ProgressView()
                 }
-
+                
                 VStack {
                     
                     HStack {

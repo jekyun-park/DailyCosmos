@@ -14,11 +14,11 @@
 		220793CF292F32230060DC5D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220793CE292F32230060DC5D /* NetworkManager.swift */; };
 		220793D1292F32D30060DC5D /* SpaceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220793D0292F32D30060DC5D /* SpaceData.swift */; };
 		220793D5292F35C30060DC5D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220793D4292F35C30060DC5D /* DetailView.swift */; };
-		220793D7292F3CF80060DC5D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220793D6292F3CF80060DC5D /* Observer.swift */; };
+		220793D7292F3CF80060DC5D /* SpaceDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220793D6292F3CF80060DC5D /* SpaceDataStore.swift */; };
 		220793D9292F5FED0060DC5D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220793D8292F5FED0060DC5D /* Message.swift */; };
 		2288A63A292FCACC00DFC436 /* APIsInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2288A639292FCACC00DFC436 /* APIsInfo.plist */; };
 		2288A63D292FCC6000DFC436 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2288A63C292FCC6000DFC436 /* BundleExtension.swift */; };
-		22FC54D6294A23170079E32A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC54D5294A23170079E32A /* CalendarView.swift */; };
+		22FC54D6294A23170079E32A /* MyCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC54D5294A23170079E32A /* MyCalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,11 +30,11 @@
 		220793CE292F32230060DC5D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		220793D0292F32D30060DC5D /* SpaceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceData.swift; sourceTree = "<group>"; };
 		220793D4292F35C30060DC5D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		220793D6292F3CF80060DC5D /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		220793D6292F3CF80060DC5D /* SpaceDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDataStore.swift; sourceTree = "<group>"; };
 		220793D8292F5FED0060DC5D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2288A639292FCACC00DFC436 /* APIsInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIsInfo.plist; sourceTree = "<group>"; };
 		2288A63C292FCC6000DFC436 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
-		22FC54D5294A23170079E32A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		22FC54D5294A23170079E32A /* MyCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		22A3AA6A2938E91A00EC2FB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				220793D6292F3CF80060DC5D /* Observer.swift */,
+				220793D6292F3CF80060DC5D /* SpaceDataStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,7 +108,7 @@
 			children = (
 				220793C2292F26C10060DC5D /* ContentView.swift */,
 				220793D4292F35C30060DC5D /* DetailView.swift */,
-				22FC54D5294A23170079E32A /* CalendarView.swift */,
+				22FC54D5294A23170079E32A /* MyCalendarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,8 +203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				220793D1292F32D30060DC5D /* SpaceData.swift in Sources */,
-				220793D7292F3CF80060DC5D /* Observer.swift in Sources */,
-				22FC54D6294A23170079E32A /* CalendarView.swift in Sources */,
+				220793D7292F3CF80060DC5D /* SpaceDataStore.swift in Sources */,
+				22FC54D6294A23170079E32A /* MyCalendarView.swift in Sources */,
 				220793CF292F32230060DC5D /* NetworkManager.swift in Sources */,
 				220793C3292F26C10060DC5D /* ContentView.swift in Sources */,
 				220793D5292F35C30060DC5D /* DetailView.swift in Sources */,

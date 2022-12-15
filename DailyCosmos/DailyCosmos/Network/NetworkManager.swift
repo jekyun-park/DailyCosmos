@@ -18,8 +18,11 @@ final class NetworkManager {
     func fetchDataWithURLString <T:Decodable> (urlString: String) async throws -> T {
         guard let url = URL(string: urlString) else { fatalError("Unvalid URL") }
 
-        let (data, _) = try await URLSession.shared.data(from: url)
-
+        let (data, _ ) = try await URLSession.shared.data(from: url)
+        
+        // TODO: - API limit 초과로 인한 데이터 수신 실패
+        print(String(data: data, encoding: .utf8))
+        
         do {
             return try JSONDecoder().decode(T.self, from: data)
         } catch {
